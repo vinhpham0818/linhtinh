@@ -1,5 +1,5 @@
 import React from 'react'
-import './farms.css'
+import './farms.scss'
 
 class FarmsPage extends React.Component {
     render () {
