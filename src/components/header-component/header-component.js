@@ -1,5 +1,6 @@
 import React from 'react'
 import './header-component.scss'
+import {Link} from 'react-router-dom'
 
 class HeaderComp extends React.Component {
     render () {
