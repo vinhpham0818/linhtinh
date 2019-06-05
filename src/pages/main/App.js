@@ -7,11 +7,7 @@ import MainRouter from '../../router';
 function App() {
   return (
     <div >
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo"/>
-        </div>
-      </div>
+      
         <div>
           <HeaderComp></HeaderComp>
         </div>

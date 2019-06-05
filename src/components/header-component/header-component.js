@@ -1,10 +1,20 @@
 import React from 'react'
 import './header-component.scss'
 import {Link} from 'react-router-dom'
+import logo from '../../asstes/images/logo.svg'
 
 class HeaderComp extends React.Component {
     render () {
         return (
+            <React.Fragment>
+            <div className="one"></div>
+
+            <div className="App">
+                <div className="App-header">
+                <img src={logo} className="App-logo" alt="logo"/>
+                </div>
+            </div>
+
             <div className='main-header'>
                 <ul>
                     <li>
@@ -28,6 +38,7 @@ class HeaderComp extends React.Component {
                     </li>
                 </ul>
             </div>
+            </React.Fragment>
         )
     }
 }

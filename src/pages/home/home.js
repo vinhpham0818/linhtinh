@@ -3,46 +3,19 @@ import './home.scss'
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
 import Cay from '../../asstes/images/456.jpg'
+import Cookies from 'universal-cookie';
  
 class HomePage extends React.Component {
     constructor () {
         super()
-        this.state = {
-            data: [
-                {
-                    name: 'Vinh'
-                },
-                {
-                    name: 'Phuong'
-                },
-                {
-                    name: 'quyen'
-                }
-            ]
-        }
     }
-
     render() {
         return (
+
             <React.Fragment>
                 <div className="home-page">
-                   <ul>
-                       {
-                           this.state.data.map((item, index) => {
-                               return (
-                                
-                                    <li>
-                                        <span className="item-title">Name:</span>
-                                        <span className="item-name">{item.name}</span>
-                                    </li>
-                               )
-                               
-                    })
-                }
-                           
-                   </ul>
                    <div>
-                       <img src={Cay} width="900px" height="500px"></img>
+                       <img src={Cay}></img>
                    </div>
                 </div>
             </React.Fragment>

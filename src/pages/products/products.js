@@ -3,9 +3,16 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import dog from '../../asstes/images/123.jpg'
 import {Link} from 'react-router-dom'
+import Cookies from 'universal-cookie';
 
 class ProductsPage extends React.Component {
+
   constructor () {
+    const cookies = new Cookies();
+ 
+cookies.set('myCat', 'Pacman', { path: '/' });
+console.log(cookies.get('myCat')); // Pacman
+
       super()
       this.state = {
           data: [
