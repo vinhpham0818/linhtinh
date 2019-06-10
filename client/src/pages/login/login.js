@@ -9,31 +9,34 @@ class LoginPage extends React.Component {
     constructor() {
         super()
         this.state = {
-            response:''
+            response: ''
         }
     }
 
-    componentDidMount () {
-            let self = this
-            axios.get('http://localhost:4000/api/hello')
-        .then(function (response) {
-            // handle success
-            console.log(response.data);
+    componentDidMount() {
+        let self = this
+        axios.get('/api/products')
+            .then(function (response) {
+                // handle success
+                console.log(response);
+                let els = response.data.member.map((key, index) => {
+                    return (
+                        <li key={index}>{key.name}</li>
+                    )
+                })
+                self.setState({
+                    response: els
+                })
+            }).catch(function (error) {
+                // handle error
+                console.log(error);
+            })
+            .finally(function () {
+                // always executed
+            });
+        }
 
-            self.setState ={
-                response: response.data
-            }
-        })
-        .catch(function (error) {
-            // handle error
-            console.log(error);
-        })
-        .finally(function () {
-            // always executed
-        });
-            }
-
-    render () {
+    render() {
         return (
             <React.Fragment>
                 <Form className="main-contact">
@@ -41,7 +44,7 @@ class LoginPage extends React.Component {
                         <Form.Label>Email address{this.state.response}</Form.Label>
                         <Form.Control type="email" placeholder="Enter email" />
                         <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
+                            We'll never share your email with anyone else.
                         </Form.Text>
                     </Form.Group>
 

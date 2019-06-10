@@ -7,7 +7,10 @@ import Nav from 'react-bootstrap/Nav'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import FormControl from 'react-bootstrap/FormControl'
-import Breadcrumb from 'react-bootstrap/Breadcrumb'
+import Carousel from 'react-bootstrap/Carousel'
+import Xalach from '../../asstes/images/xalach.jpg'
+import Ot from '../../asstes/images/ot.jpg'
+import Dua from '../../asstes/images/dua.jpg'
 
 
 class HeaderComp extends React.Component {
@@ -43,6 +46,44 @@ class HeaderComp extends React.Component {
                         <Button variant="outline-primary">Search</Button>
                     </Form>
             </Navbar>
+
+            <Carousel className="two">
+                <Carousel.Item>
+                    <img
+                    className="d-block w-100"
+                    src={Xalach}
+                    alt="First slide"
+                    />
+                    <Carousel.Caption>
+                    <h3>First slide label</h3>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                    className="d-block w-100"
+                    src={Ot}
+                    alt="Third slide"
+                    />
+
+                    <Carousel.Caption>
+                    <h3>Second slide label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                    className="d-block w-100"
+                    src={Dua}
+                    alt="Third slide"
+                    />
+
+                    <Carousel.Caption>
+                    <h3>Third slide label</h3>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
 
             </div>
             
