@@ -1,0 +1,38 @@
+.main-footer {
+    width: 80%;
+    height: 400px;
+    background-color: #0C5E0C;
+    margin: 10px auto;
+    padding: 20px 0px 20px 0;
+    color: white;
+    h3 {
+        font-size: 14px;
+    }
+    p {
+        font-size: 12px;
+    }
+    .img-file {
+        float: left;
+        img {
+            padding-right: 5px;
+            width: 130px;
+            height: 100px;
+            margin: 5px;
+            float: left;
+        }
+    }
+    h2 {
+        font-size: 14px;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .socail {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        
+    }
+}
