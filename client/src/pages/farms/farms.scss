@@ -1,0 +1,69 @@
+.main-farm {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    .link-to {
+        text-decoration: none;
+        color: #000;
+    }
+    ul {
+        list-style-type: none
+    }
+    .border-farm {
+        border-bottom: 1px solid #0C5E0C;
+        margin: 0 0 20px auto;
+        width: 96%;
+        opacity: 0.6;
+    }
+    .text-img {
+        padding: 10px;
+    }
+    .img-farm {
+        width: 40%;
+        float: left;
+        height: auto;
+        margin: 0 10px 0 0;
+    }
+    .header-sanpham {
+         font-size: 18px;
+         margin: 10px 0 0 50px;
+    }
+    .aaff {
+        padding: 0px 100px 0px 100px;
+        .aa {
+            width: 23%;
+            float: left;
+            margin: 1%;
+            .image {
+                opacity: 1;
+                display: block;
+                width: 100%;
+                height: auto;
+                transition: .5s ease;
+                backface-visibility: hidden;
+              }
+              .middle {
+                transition: .5s ease;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%)
+              }
+              .text {
+                background-color: #4CAF50;
+                color: white;
+                font-size: 16px;
+                padding: 16px 32px;
+              }
+              &:hover .image {
+                opacity: 0.3;
+              }
+              
+              &:hover .middle {
+                opacity: 1;
+              }                    
+            }
+    }
+}

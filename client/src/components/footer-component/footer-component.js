@@ -15,21 +15,34 @@ import Pinterest from '../../asstes/images/pinterest.svg'
 import Button from 'react-bootstrap/Button'
 import InputGroup from 'react-bootstrap/InputGroup'
 import FormControl from 'react-bootstrap/FormControl'
+import ImgFooter from '../../asstes/images/img-footer.jpg'
+import Carousel from 'react-bootstrap/Carousel'
 
 class FooterCom extends React.Component {
     render () {
         return (
             <React.Fragment>
-                <InputGroup className="mb-3">
-                    <FormControl
-                    placeholder="you email: a@gmail.com"
-                    aria-label="you email: a@gmail.com"
-                    aria-describedby="basic-addon2"
-                    />
-                    <InputGroup.Append>
-                    <Button variant="outline-danger">Theo dõi</Button>
-                    </InputGroup.Append>
-                </InputGroup>
+            <div className="img-footer">
+                <div className="input-email">
+                    <h4>Nhận tin khuyến mãi</h4>
+                    <Container>
+                        <Row >
+                            <Col xs={5} className="email">
+                            <InputGroup className="mb-2">
+                                <FormControl
+                                placeholder="Nhập địa chỉ email"
+                                aria-label="Nhập địa chỉ email"
+                                aria-describedby="basic-addon2"
+                                />
+                                <InputGroup.Append>
+                                <Button variant="outline-danger"><strong>Theo dõi</strong></Button>
+                                </InputGroup.Append>
+                            </InputGroup>
+                            </Col>
+                        </Row>
+                    </Container>
+                    
+                </div>
                 <div className="main-footer">
                     <Container>
                         <Row>
@@ -92,8 +105,17 @@ class FooterCom extends React.Component {
                             </Col>
                         </Row>
                     </Container>
-
                 </div>
+            </div>
+
+            <div className="coppywrite">
+                <p className="aabbcc">Coppywrite @2019 by VinhPham</p>
+                <div className="dmca">
+                    <p>Chính sách bảo mật thông tin</p>
+                    <p>Điều khoản sử dụng</p>
+                    <p>Sơ đồ trang web</p>
+                </div>
+            </div>
             </React.Fragment>
         )
     }

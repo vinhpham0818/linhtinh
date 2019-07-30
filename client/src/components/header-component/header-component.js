@@ -14,11 +14,11 @@ import InputGroup from 'react-bootstrap/InputGroup'
 import Search from '../../asstes/images/search.svg'
 import Call from '../../asstes/images/call.svg'
 import Email from '../../asstes/images/email.svg'
-import Shopping from '../../asstes/images/shopping.svg'
+import Shopping from '../../asstes/images/shopping-bag.svg'
 import Carousel from 'react-bootstrap/Carousel'
-import Banner1 from '../../asstes/images/banner1.jpg'
-import Banner2 from '../../asstes/images/banner2.jpg'
-import Banner3 from '../../asstes/images/banner3.jpg'
+import Banner1 from '../../asstes/images/ot-chuong.jpg'
+import Banner2 from '../../asstes/images/ca-chua.jpg'
+import Banner3 from '../../asstes/images/xa-lach.jpg'
 
 class HeaderComp extends React.Component {
     render () {
@@ -84,7 +84,7 @@ class HeaderComp extends React.Component {
                         </Nav.Item>
 
                         <Nav.Item>
-                            <Nav.Link className="mr-5 af" href="/farms"><div className="afg">Trang Trại</div></Nav.Link>
+                            <Nav.Link className="mr-5 af" href="/farms"><div className="afg">Nông Trại</div></Nav.Link>
                         </Nav.Item>
 
                         <Nav.Item>
@@ -98,10 +98,10 @@ class HeaderComp extends React.Component {
                 </Navbar.Collapse>
                 <img src={Shopping} className="ad"></img>
             </Navbar>
-            <Carousel >
-                <Carousel.Item className="c">
+            <Carousel className="carousel-banner">
+                <Carousel.Item>
                     <img
-                    className="d-block w-100"
+                    className="d-block w-100" 
                     src={Banner1}
                     alt="First slide"
                     />
@@ -110,25 +110,25 @@ class HeaderComp extends React.Component {
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="c">
+
+                <Carousel.Item>
                     <img
                     className="d-block w-100"
                     src={Banner2}
                     alt="Third slide"
                     />
-
                     <Carousel.Caption>
                     <h3>Second slide label</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="c">
+
+                <Carousel.Item>
                     <img
                     className="d-block w-100"
                     src={Banner3}
                     alt="Third slide"
                     />
-
                     <Carousel.Caption>
                     <h3>Third slide label</h3>
                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>

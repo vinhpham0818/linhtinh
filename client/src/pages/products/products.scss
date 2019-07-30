@@ -1,0 +1,53 @@
+.main-products {
+    margin: 20px;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li{
+            border: #398136;
+        }
+      }
+      .img-products {
+          float: left;
+          margin: 5px;
+          width: 23%;
+          height: auto;
+          .img-rau-cu-qua {
+            // width: 20%;
+            height: 200px;
+            object-fit: cover;
+            opacity: 1;
+            display: block;
+            transition: .5s ease;
+            backface-visibility: hidden;
+          }
+          .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%)
+          }
+          .text {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px;
+          }
+          &:hover .image {
+            opacity: 0.3;
+          }
+          &:hover .middle {
+            opacity: 1;
+          }         
+      }
+}
+
+.main {
+    width: 90%;
+    height: auto;
+    margin: auto;
+}

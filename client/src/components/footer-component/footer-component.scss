@@ -1,10 +1,11 @@
 .main-footer {
     width: 80%;
-    height: 400px;
-    background-color: #0C5E0C;
+    height: auto;
+    background-color: rgba(12, 94, 12, 0.9);
     margin: 10px auto;
-    padding: 20px 0px 20px 0;
+    padding: 20px 0 20px 0;
     color: white;
+    text-align: left;
     h3 {
         font-size: 14px;
     }
@@ -34,5 +35,41 @@
         height: 50px;
         margin: 5px;
         
+    }
+}
+
+.input-email {
+    text-align: center;
+    color: black;
+    .email {
+        margin: auto;
+        padding: 5px;
+    }
+}
+
+.img-footer {
+    background-image: url("../../asstes/images/img-footer.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    margin: 10px 0 10px 0;
+    background-size: 100% 100%;
+    padding: 10px;
+    object-fit: cover;
+}
+
+.coppywrite {
+    font-size: 12px;
+    p {
+        float: left;
+        margin: -5px 0 2px 0;
+        padding: 0 5px 0 5px;
+    }
+    .dmca {
+        text-align: end;
+    }
+    .aabbcc {
+        width: 65%;
+        margin-left: 20px;
     }
 }

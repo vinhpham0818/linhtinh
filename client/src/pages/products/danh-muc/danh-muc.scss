@@ -1,0 +1,36 @@
+.main-danhmuc {
+    width: 120%;
+    height: auto;
+    margin: auto;
+    padding: auto;
+    background-color: #FBFBF8;
+    
+    // .border-danhmuc {
+    //     border: 1px solid black;
+    //     padding: -10px 20px 0 20px;
+    //     margin: 10px 0 0 -50px;
+    // }
+    h3 {
+        font-size: 18px;
+        text-align: left;
+        margin: 20px 0 10px 0px;
+        color: black;
+        // border: 1px solid #1E747A;
+        border-radius: 3px;
+        padding: 5px;
+        background-color: #A2F4FA;
+    }
+    .ul-danhmuc {
+        list-style-type: none;
+        margin-left: -20px;
+    }
+    .khuyen-mai {
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
+    .ten-nong-trai {
+        width: 100%;
+        // margin: 0 0 0 18%;
+    }
+}
